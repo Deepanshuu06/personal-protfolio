@@ -16,7 +16,7 @@ const Computers = ({ isMobile }) => {
         penumbra={1}
         intensity={1}
         castShadow
-        shadowMapSize={1024} // Changed from shadow-mapSize to shadowMapSize
+        shadow-mapSize={1024}
       />
       <pointLight intensity={1} />
       <primitive
@@ -33,18 +33,23 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
 
+    // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
 
+    // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
 
-    mediaQuery.addListener(handleMediaQueryChange); // Changed from addEventListener to addListener
+    // Add the callback function as a listener for changes to the media query
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
 
+    // Remove the listener when the component is unmounted
     return () => {
-      mediaQuery.removeListener(handleMediaQueryChange); // Changed from removeEventListener to removeListener
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
   }, []);
 
