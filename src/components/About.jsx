@@ -1,16 +1,15 @@
-import React from "react";
-import {Tilt} from "react-tilt";
-import { motion } from "framer-motion";
-
-import { styles } from "../styles";
-import { services } from "../constants/constants.js";
-import { SectionWrapper } from "../hoc"; // Adjust the path if necessary
-import { fadeIn, textVariant } from "../utils/motion";
+import React from 'react'
+import { Tilt } from 'react-tilt'
+import { motion } from 'framer-motion'
+import { styles } from '../styles'
+import { services } from '../constants/constants.js'
+import { SectionWrapper } from '../hoc' // Adjust the path if necessary
+import { fadeIn, textVariant } from '../utils/motion'
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
       <div
@@ -33,7 +32,7 @@ const ServiceCard = ({ index, title, icon }) => (
       </div>
     </motion.div>
   </Tilt>
-);
+)
 
 const About = () => {
   return (
@@ -44,12 +43,13 @@ const About = () => {
       </motion.div>
 
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-       Hi, I'm Deepanshu, a skilled software developer proficient in TypeScript and JavaScript. With expertise in React, Node.js, and Three.js, I specialize in crafting efficient, scalable, and user-friendly solutions. Let's collaborate to bring your ideas to life!
-
-
+        Hi, I'm Deepanshu, a skilled software developer proficient in TypeScript
+        and JavaScript. With expertise in React, Node.js, and Three.js, I
+        specialize in crafting efficient, scalable, and user-friendly solutions.
+        Let's collaborate to bring your ideas to life!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
@@ -58,7 +58,7 @@ const About = () => {
         ))}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default SectionWrapper(About, "about");
+export default SectionWrapper(About, 'about')

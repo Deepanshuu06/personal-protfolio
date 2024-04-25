@@ -19,10 +19,10 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
+    fanta,
+    codinghustle,
+    foodcourt
   } from "../assets";
   
   export const navLinks = [
@@ -116,55 +116,29 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Frontend Development Learner",
+      company_name: "Self-Educated",
+
+      iconBg: "#F9A826",
+      date: "Ongoing",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Self-taught through online resources, tutorials, and courses in frontend development technologies.",
+        "Building personal projects to apply theoretical knowledge and gain practical experience.",
+        "Exploring fundamental concepts such as HTML, CSS, and JavaScript to establish a strong foundation.",
+        "Seeking opportunities to collaborate on open-source projects and contribute to the developer community.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "BCA Student",
+      company_name: "u--------",
+
+      iconBg: "#5E63B6",
+      date: "Expected Graduation: May 2025",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Pursuing a degree in software engineering to gain formal education and hands-on experience.",
+        "Studying computer science fundamentals, algorithms, and data structures to understand core principles.",
+        "Participating in coding bootcamps, hackathons, and workshops to enhance practical skills and network with peers.",
+        "Completing internships and co-op programs to gain industry exposure and prepare for entry-level roles.",
       ],
     },
   ];
@@ -172,84 +146,85 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
+        "Creating a stunning website was a breeze with Rick's expertise. I'm amazed by the results!",
+      name: "Priya Patel",
+      designation: "Project Manager",
+      company: "XYZ Solutions",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
+        "Rick's dedication to our project was exceptional. His work truly made a difference for us.",
+      name: "Rahul Gupta",
+      designation: "Lead Developer",
+      company: "PQR Tech",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
+        "Thanks to Rick's optimization, our website now performs better than ever before. Highly recommended!",
+      name: "Sneha Sharma",
+      designation: "Marketing Manager",
+      company: "LMN Enterprises",
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
-  ];
+];
+
+
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Coding Shuttle Clone",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A web-based platform inspired by Anuj Bhaiya's website,Anuj Bhaiya is a popular web development teacher on YouTube, and this project serves as a homage to his teachings",
+        tags: [
+          {
+            name: "HTML",
+            color: "orange-text-gradient",
+          },
+          {
+            name: "CSS",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "JavaScript",
+            color: "pink-text-gradient",
+          },
+        ],
+      image: codinghustle,
+      source_code_link: "https://github.com/Deepanshuu06/coding-shuttle-clone",
+    },
+    {
+      name: "Fanta Frontend",
+      description: "A visually stunning and interactive frontend interface inspired by the Fanta brand. This project showcases animated elements and engaging user interactions, providing an immersive experience for visitors.",
       tags: [
         {
-          name: "react",
+          name: "HTML",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "CSS",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
+          name: "JavaScript",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: fanta,
+      source_code_link: "https://github.com/Deepanshuu06/Fanta_fontend",
     },
     {
-      name: "Job IT",
+      name: "Food Court",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A food ordering website clone that utilizes the Swiggy live API to display food items and enable users to place orders seamlessly.",
       tags: [
         {
-          name: "react",
+          name: "reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
+          name: "redux",
           color: "green-text-gradient",
         },
         {
@@ -257,8 +232,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: foodcourt ,
+      source_code_link: "https://github.com/Deepanshuu06/food-court-frontend/tree/main/optimizing%20app",
     },
   ];
   
