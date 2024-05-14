@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
+import { Typewriter } from 'react-simple-typewriter'
 
 const Hero = () => {
   return (
@@ -15,12 +16,37 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Deepanshu</span>
-          </h1>
+          <h1  className={`${styles.heroHeadText} text-white`}>
+          Hi, I'm {' '}
+        <span className='text-[#915EFF]' >
+          {/* Style will be inherited from the parent element */}
+          <Typewriter
+            words={['Deepanshuu']}
+            loop={true}
+            cursor
+            cursorStyle='|'
+            typeSpeed={50}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </span>
+      </h1>
+
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop user interfaces and <br className='sm:block hidden' />web applications
-          </p>
+            I develop {" "}
+           <span  className='text-yellow-500'>
+          {/* Style will be inherited from the parent element */}
+          <Typewriter
+            words={['User Interfaces' ,'Web Applications']}
+            loop={true}
+            cursor
+            cursorStyle='|'
+            typeSpeed={50}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </span>
+        </p>
         </div>
       </div>
 
