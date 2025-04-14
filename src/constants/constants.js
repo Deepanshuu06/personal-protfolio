@@ -17,7 +17,9 @@ import {
     docker,
     threejs,
     foodApp,
-    confession
+    confession,
+    frontendLogo,
+    collegeLogo
 
 
   } from "../assets";
@@ -43,12 +45,12 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
       title: "Backend Developer",
       icon: backend,
+    },
+    {
+      title: "Blogger",
+      icon: mobile,
     },
     {
       title: "Content Creator",
@@ -116,6 +118,7 @@ import {
       title: "Frontend Developer",
       company_name: "Self-Taught / Independent",
       iconBg: "#F9A826",
+      icon:frontendLogo,
       date: "Ongoing",
       points: [
         "Gained in-depth experience with modern frontend frameworks including React and Next.js.",
@@ -129,6 +132,7 @@ import {
       title: "Bachelor of Computer Applications (BCA) Student",
       company_name: "Shri Vaishnav Vidyapeeth Viswavidyalaya",
       iconBg: "#5E63B6",
+      icon:collegeLogo,
       date: "Expected Graduation: May 2025",
       points: [
         "Pursuing a degree in Computer Applications with a focus on software development and web technologies.",
@@ -181,6 +185,7 @@ const projects = [
       { name: "Tailwind CSS", color: "pink-text-gradient" },
     ],
     image: foodApp,
+    deployedLink:"https://food-zone-mauve.vercel.app/",
     source_code_link:
       "https://github.com/Deepanshuu06/food_ordering_web_frontend.git",
   },
@@ -193,6 +198,7 @@ const projects = [
       { name: "Tailwind CSS", color: "blue-text-gradient" },
     ],
     image: confession,
+    deployedLink:"https://anonymous-confessions-xi.vercel.app/u/deepanshu",
     source_code_link:
       "https://github.com/Deepanshuu06/anonymous_confessions.git",
   },

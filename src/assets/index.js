@@ -22,6 +22,9 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import foodApp from "./foodOrderingWebApp.png"
 import confession from "./confessionApp.png"
+import collegeLogo from "./svvv.png"
+import frontendLogo from "./frontend.png"
+
 
 
 
@@ -48,6 +51,8 @@ export {
   typescript,
   threejs,
   foodApp,
-  confession
+  confession,
+  frontendLogo,
+  collegeLogo
 
 };
